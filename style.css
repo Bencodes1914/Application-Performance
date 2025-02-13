@@ -129,14 +129,42 @@
 
 .front-text h1 span {
     display: inline-block;
-    transform: rotate(-8.5deg) translateY(10%);
-    transition: transform 500ms;
+    transform: rotate(-7.5deg) translateY(10%);
+    transition: transform 0.75s;
 }
 
 .front-text h1 span:hover {
     transform: rotate(0deg)  translateY(0%);
 }
-
+@keyframes span{
+    0%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(-8deg);
+    }
+    75%{
+        transform: rotate(-7deg);
+    }
+    80%{
+        transform: rotate(-7.8deg);
+    }
+    85%{
+        transform: rotate(-7.2deg);
+    }
+    90%{
+        transform: rotate(-7.5deg);
+    }
+    95%{
+        transform: rotate(-7.4deg);
+    }
+    100%{
+        transform: rotate(-7.5deg);
+    }
+}
 .front-text p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
