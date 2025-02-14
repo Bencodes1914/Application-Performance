@@ -133,7 +133,7 @@
 .front-text h1 span {
     display: inline-block;
     transform: rotate(-7.5deg) translateY(10%);
-    transition: transform 0.75s;
+    transition: transform 0.1s;
 }
 
 .front-text h1 span:hover {
@@ -200,33 +200,15 @@ img {
 }
 
 .bouncingAnimation{
-    animation: bounceEffect 1s linear 1s;
+    animation: bounceEffect 0.1s linear 0.1s 3;
 }
 
 @keyframes bounceEffect{
-    0%{
-        transform: rotate(-7.5deg) translateY(10%);
+    from {
+        transform: rotate(-1.5deg) translateY(0%);
     }
 
-    50%{
-        transform: rotate(0) translateY(0);
-    }
-
-    80%{
-        transform: rotate(-1.5deg) translateY(2%);
-    }
-
-    85%{
-        transform: rotate(0) translateY(0);
-    }
-    
-    90%{
-        transform: rotate(-7.5deg) translateY(10%);
-    }
-    95%{
-        transform: rotate(0) translateY(0);
-    }
-    100%{
-        transform: rotate(-1.5deg) translateY(2%);
+    to {
+        transform: rotate(0deg) translateY(0%);
     }
 }

@@ -8,5 +8,5 @@ function AddAnimation(){
 
     setTimeout(() => {
         spanElement.classList.remove("bouncingAnimation");
-    }, 5000);
+    }, 1000 * 0.6);
 }
