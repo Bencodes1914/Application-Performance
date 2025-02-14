@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .container{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
     background: linear-gradient(135deg, #2B1D38 0%, #4B2D7F 100%);
@@ -42,6 +43,7 @@
     font-weight: 500;
     transition: opacity 0.2s;
 }
+
 .navigation-links a:hover{
     background-color: #6a5fc1;
     width: 90px;
@@ -111,6 +113,7 @@
     justify-content: center;
     gap: 0.5rem;
 }
+
 .front-text {
     text-align: center;
     padding: 4rem 2rem;
@@ -136,35 +139,7 @@
 .front-text h1 span:hover {
     transform: rotate(0deg)  translateY(0%);
 }
-@keyframes span{
-    0%{
-        transform: rotate(0deg);
-    }
-    60%{
-        transform: rotate(0deg);
-    }
-    70%{
-        transform: rotate(-8deg);
-    }
-    75%{
-        transform: rotate(-7deg);
-    }
-    80%{
-        transform: rotate(-7.8deg);
-    }
-    85%{
-        transform: rotate(-7.2deg);
-    }
-    90%{
-        transform: rotate(-7.5deg);
-    }
-    95%{
-        transform: rotate(-7.4deg);
-    }
-    100%{
-        transform: rotate(-7.5deg);
-    }
-}
+
 .front-text p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
@@ -196,6 +171,7 @@
     font-weight: 600;
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
+
 .container2{
     display: flex;
     flex-direction: column;
@@ -214,10 +190,43 @@ img {
     justify-content: center;
     align-items: center;
 }
+
 .searchLight{
     align-items: center;
     margin-top: -400px;
     z-index: 3;
     margin-left: 150px;
     position: relative;
+}
+
+.bouncingAnimation{
+    animation: bounceEffect 1s linear 1s;
+}
+
+@keyframes bounceEffect{
+    0%{
+        transform: rotate(-7.5deg) translateY(10%);
+    }
+
+    50%{
+        transform: rotate(0) translateY(0);
+    }
+
+    80%{
+        transform: rotate(-1.5deg) translateY(2%);
+    }
+
+    85%{
+        transform: rotate(0) translateY(0);
+    }
+    
+    90%{
+        transform: rotate(-7.5deg) translateY(10%);
+    }
+    95%{
+        transform: rotate(0) translateY(0);
+    }
+    100%{
+        transform: rotate(-1.5deg) translateY(2%);
+    }
 }
